@@ -71,6 +71,10 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   top: var(--spacing-sm);
+  background-color: var(--white);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -79,6 +83,7 @@ nav ul {
   gap: var(--spacing-lg);
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 nav a {
@@ -92,6 +97,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--primary-medium);
+  text-decoration: none;
 }
 
 /* Main Content */
