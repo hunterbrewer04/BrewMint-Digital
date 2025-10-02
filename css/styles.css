@@ -237,11 +237,18 @@ main {
 /* Page Sections */
 .page-section {
   padding: var(--spacing-xl) var(--spacing-md);
-  background-color: var(--white);
+  background-color: var(--neutral-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.page-section:nth-child(even) {
-  background-color: var(--neutral-bg);
+.page-section .container {
+  background-color: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .page-section h1 {
@@ -255,21 +262,39 @@ main {
   color: var(--primary-dark);
   font-size: 2rem;
   margin-bottom: var(--spacing-md);
+  text-align: center;
+  margin-top: var(--spacing-md);
 }
 
 .page-section p {
   color: var(--primary-dark);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section ul,
+.page-section ol {
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+.page-section li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--primary-dark);
 }
 
 /* Contact Form */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  background-color: var(--white);
   padding: var(--spacing-md);
-  border-radius: 8px;
+  text-align: left;
 }
 
 .form-group {
