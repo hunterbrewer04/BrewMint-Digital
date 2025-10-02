@@ -30,7 +30,7 @@
 body {
   font-family: var(--font-primary);
   color: var(--primary-dark);
-  background: linear-gradient(135deg, var(--white) 0%, var(--neutral-bg) 50%, var(--primary-light) 100%);
+  background: linear-gradient(135deg, var(--white) 0%, var(--neutral-bg) 30%, var(--primary-light) 100%);
   background-attachment: fixed;
   line-height: 1.6;
   min-height: 100vh;
@@ -38,30 +38,34 @@ body {
 
 /* Header Styles */
 header {
-  padding: var(--spacing-md) var(--spacing-md) 0;
-  text-align: center;
+  padding: var(--spacing-md);
+  position: relative;
 }
 
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-md);
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: var(--spacing-sm);
 }
 
 .logo-img {
-  height: 175px;
+  height: 350px;
   width: auto;
   display: block;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: var(--spacing-md);
 }
 
 nav ul {
@@ -348,7 +352,18 @@ main {
 /* Responsive Design */
 @media (max-width: 768px) {
   .logo-img {
-    height: 120px;
+    height: 240px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    position: static;
+    transform: none;
+    margin-top: var(--spacing-md);
   }
 
   nav ul {
@@ -387,7 +402,7 @@ main {
   }
 
   .logo-img {
-    height: 100px;
+    height: 200px;
   }
 
   .hero h1 {
