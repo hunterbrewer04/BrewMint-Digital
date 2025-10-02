@@ -59,6 +59,14 @@ header {
   font-weight: 700;
   color: var(--white);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  display: block;
 }
 
 nav ul {
@@ -103,11 +111,19 @@ main {
   align-items: center;
 }
 
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero h1 {
   font-size: 2.5rem;
   color: var(--primary-dark);
   margin-bottom: var(--spacing-md);
   font-weight: 700;
+  text-align: center;
 }
 
 .hero p {
@@ -115,6 +131,7 @@ main {
   color: var(--primary-dark);
   margin-bottom: var(--spacing-lg);
   max-width: 600px;
+  text-align: center;
 }
 
 /* Buttons */
