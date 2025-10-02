@@ -3,313 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrewMint Digital — Websites that convert</title>
-    <meta name="description" content="Design and build of clean, fast, conversion-focused websites for small businesses.">
-    <meta property="og:title" content="BrewMint Digital — Websites that convert">
-    <meta property="og:description" content="Design and build of clean, fast, conversion-focused websites for small businesses.">
-    <meta property="og:image" content="/og.jpg">
-    <link rel="canonical" href="https://brewmint.digital/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>BrewMint - Website Building & AI Automations</title>
+    <meta name="description" content="BrewMint specializes in website building and AI automations. Transform your business with modern web solutions and intelligent automation.">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="/">BrewMint Digital</a>
-                </div>
-                <nav class="nav" id="nav">
-                    <a href="/">Home</a>
-                    <a href="/services">Services</a>
-                    <a href="/about">About</a>
-                    <a href="/contact">Contact</a>
-                </nav>
-                <a href="/contact" class="btn btn-primary cta-btn">Get a Free Proposal</a>
-                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-                    <i data-lucide="menu"></i>
-                </button>
-            </div>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">BrewMint</a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-eyebrow">Websites that actually work</div>
-                <h1 class="hero-headline">Clean, fast, and conversion-ready.</h1>
-                <p class="hero-subheadline">We design and build modern sites for small businesses—focused on clarity, speed, and measurable results.</p>
-                <div class="hero-ctas">
-                    <a href="/contact" class="btn btn-primary">Start Your Project</a>
-                    <a href="#work" class="btn btn-secondary">See Our Work</a>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Modern Websites & Intelligent Automation</h1>
+                <p>Transform your business with cutting-edge web solutions and AI-powered automation that drives results.</p>
+                <div class="cta-buttons">
+                    <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="hero-mock">
-                    <div class="mock-browser">
-                        <div class="mock-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="mock-url">brewmint.digital</div>
-                    </div>
-                    <div class="mock-content">
-                        <div class="mock-header"></div>
-                        <div class="mock-hero"></div>
-                        <div class="mock-sections">
-                            <div class="mock-section"></div>
-                            <div class="mock-section"></div>
-                            <div class="mock-section"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar">
-        <div class="container">
-            <p class="trust-title">Trusted by local and growing brands</p>
-            <div class="trust-logos">
-                <div class="trust-logo">CLIENT 1</div>
-                <div class="trust-logo">CLIENT 2</div>
-                <div class="trust-logo">CLIENT 3</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Preview -->
-    <section class="section services-preview" id="services">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-kicker">Services</div>
-                <h2 class="section-title">What we do</h2>
-                <p class="section-intro">Everything you need to launch a high-performing website.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card card">
-                    <div class="service-icon">
-                        <i data-lucide="layout-dashboard"></i>
+        <section class="services-preview">
+            <div class="container">
+                <h2>What We Do</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Website Building</h3>
+                        <p>Beautiful, responsive websites that engage your audience and grow your business.</p>
                     </div>
-                    <h3 class="service-title">Design & UX</h3>
-                    <p class="service-copy">Clear structure, modern layouts, and mobile-first patterns.</p>
-                    <ul class="service-bullets">
-                        <li>Wireframes → polished UI</li>
-                        <li>Accessibility baked in</li>
-                        <li>Brand-consistent visuals</li>
-                    </ul>
-                </div>
-                <div class="service-card card">
-                    <div class="service-icon">
-                        <i data-lucide="rocket"></i>
-                    </div>
-                    <h3 class="service-title">Build & Launch</h3>
-                    <p class="service-copy">Clean code, fast loads, and simple content updates.</p>
-                    <ul class="service-bullets">
-                        <li>Performance tuned</li>
-                        <li>SEO-ready markup</li>
-                        <li>Analytics setup</li>
-                    </ul>
-                </div>
-                <div class="service-card card">
-                    <div class="service-icon">
-                        <i data-lucide="chart-line"></i>
-                    </div>
-                    <h3 class="service-title">Conversion</h3>
-                    <p class="service-copy">Messaging, CTAs, and forms that capture real leads.</p>
-                    <ul class="service-bullets">
-                        <li>Lead forms & routing</li>
-                        <li>Calendars & bookings</li>
-                        <li>A/B test-friendly</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section-cta">
-                <a href="/services" class="btn btn-link">View all services</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Teaser -->
-    <section class="section work-teaser" id="work">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Recent work</h2>
-                <p class="section-intro">A few examples of clean, focused sites we've delivered.</p>
-            </div>
-            <div class="work-grid">
-                <div class="work-card card">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i data-lucide="image"></i>
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <div class="work-tag">Service business</div>
-                        <h3 class="work-title">GreenScape Pro</h3>
-                        <div class="work-result">↑ 38% form submissions</div>
-                    </div>
-                </div>
-                <div class="work-card card">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i data-lucide="image"></i>
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <div class="work-tag">Local gym</div>
-                        <h3 class="work-title">Peak Fitness</h3>
-                        <div class="work-result">↑ 24% membership inquiries</div>
-                    </div>
-                </div>
-                <div class="work-card card">
-                    <div class="work-image">
-                        <div class="work-placeholder">
-                            <i data-lucide="image"></i>
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <div class="work-tag">Contractor</div>
-                        <h3 class="work-title">Oak & Iron</h3>
-                        <div class="work-result">↑ 31% qualified leads</div>
+                    <div class="service-card">
+                        <h3>AI Automations</h3>
+                        <p>Intelligent automation solutions that streamline your workflows and boost productivity.</p>
                     </div>
                 </div>
             </div>
-            <div class="section-cta">
-                <a href="/#work" class="btn btn-link">See more projects</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process -->
-    <section class="section process">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">A simple, low-friction process</h2>
-            </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="process-num">1</div>
-                    <h3 class="process-title">Discovery</h3>
-                    <p class="process-copy">Quick call to align on goals, audience, and scope.</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-num">2</div>
-                    <h3 class="process-title">Design</h3>
-                    <p class="process-copy">Low-fi → high-fi mockups with feedback loops.</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-num">3</div>
-                    <h3 class="process-title">Build</h3>
-                    <p class="process-copy">Responsive, accessible, performance-tuned code.</p>
-                </div>
-                <div class="process-step">
-                    <div class="process-num">4</div>
-                    <h3 class="process-title">Launch & Iterate</h3>
-                    <p class="process-copy">Deploy, measure, and refine for conversions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Clients, not just clicks</h2>
-            </div>
-            <div class="testimonial-card card">
-                <blockquote class="testimonial-quote">
-                    "BrewMint took us from a dated site to something we're proud to share. Leads went up immediately."
-                </blockquote>
-                <cite class="testimonial-author">
-                    <strong>M. Carter</strong>
-                    <span>Owner, GreenScape Pro</span>
-                </cite>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Band -->
-    <section class="section cta-band">
-        <div class="container">
-            <div class="cta-content card">
-                <h2 class="cta-title">Ready to get a website that pulls its weight?</h2>
-                <p class="cta-sub">Tell us about your project—no pressure, no jargon.</p>
-                <div class="cta-actions">
-                    <a href="/contact" class="btn btn-dark">Get a Free Proposal</a>
-                    <a href="/contact" class="btn btn-link">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">BrewMint Digital</div>
-                </div>
-                <div class="footer-cols">
-                    <div class="footer-col">
-                        <h4 class="footer-col-title">Company</h4>
-                        <ul class="footer-links">
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4 class="footer-col-title">Services</h4>
-                        <ul class="footer-links">
-                            <li><a href="/services#design">Web Design</a></li>
-                            <li><a href="/services#build">Development</a></li>
-                            <li><a href="/services#conversion">Conversion</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-legal">
-                <p>© BrewMint Digital. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const nav = document.getElementById('nav');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            nav.classList.toggle('nav-open');
-            const isOpen = nav.classList.contains('nav-open');
-            mobileMenuBtn.innerHTML = isOpen ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
-            lucide.createIcons();
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
+        </section>
+    </main>
 </body>
 </html>
