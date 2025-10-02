@@ -30,7 +30,7 @@
 body {
   font-family: var(--font-primary);
   color: var(--primary-dark);
-  background: linear-gradient(135deg, var(--white) 0%, var(--neutral-bg) 30%, var(--primary-light) 100%);
+  background: linear-gradient(135deg, #B8D4E8 0%, var(--primary-medium) 40%, var(--primary-dark) 100%);
   background-attachment: fixed;
   line-height: 1.6;
   min-height: 100vh;
@@ -71,10 +71,13 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   top: var(--spacing-sm);
-  background-color: var(--white);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: var(--spacing-sm) var(--spacing-lg);
   border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -87,17 +90,19 @@ nav ul {
 }
 
 nav a {
-  color: var(--primary-dark);
-  text-decoration: none;
+  color: var(--white);
+  text-decoration: none !important;
   font-weight: 600;
   font-size: 1.1rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: none !important;
 }
 
 nav a:hover,
 nav a:focus {
-  color: var(--primary-medium);
-  text-decoration: none;
+  color: var(--primary-light);
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 /* Main Content */
@@ -132,7 +137,7 @@ main {
 
 .hero h1 {
   font-size: 2.5rem;
-  color: var(--primary-dark);
+  color: var(--white);
   margin-bottom: var(--spacing-md);
   font-weight: 700;
   text-align: center;
@@ -140,7 +145,7 @@ main {
 
 .hero p {
   font-size: 1.25rem;
-  color: var(--primary-dark);
+  color: var(--white);
   margin-bottom: var(--spacing-lg);
   max-width: 600px;
   text-align: center;
@@ -150,16 +155,19 @@ main {
 .btn {
   display: inline-block;
   padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: 6px;
-  text-decoration: none;
+  border-radius: 12px;
+  text-decoration: none !important;
   font-weight: 600;
   transition: all 0.3s ease;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
   font-size: 1rem;
   position: relative;
   overflow: hidden;
   transform: translateY(0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .btn::before {
@@ -191,23 +199,25 @@ main {
 }
 
 .btn-primary {
-  background-color: var(--primary-dark);
+  background: rgba(39, 76, 119, 0.6);
   color: var(--white);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: var(--primary-medium);
+  background: rgba(39, 76, 119, 0.8);
+  text-decoration: none !important;
 }
 
 .btn-secondary {
-  background-color: var(--primary-medium);
+  background: rgba(96, 150, 186, 0.6);
   color: var(--white);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  background-color: var(--primary-light);
+  background: rgba(96, 150, 186, 0.8);
+  text-decoration: none !important;
 }
 
 .cta-buttons {
@@ -224,7 +234,7 @@ main {
 
 .services-preview h2 {
   text-align: center;
-  color: var(--primary-dark);
+  color: var(--white);
   font-size: 2rem;
   margin-bottom: var(--spacing-lg);
 }
@@ -238,11 +248,14 @@ main {
 }
 
 .service-card {
-  background-color: var(--white);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: var(--spacing-md);
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -252,13 +265,13 @@ main {
 }
 
 .service-card h3 {
-  color: var(--primary-dark);
+  color: var(--white);
   margin-bottom: var(--spacing-sm);
   font-size: 1.5rem;
 }
 
 .service-card p {
-  color: var(--primary-dark);
+  color: var(--white);
   line-height: 1.6;
 }
 
@@ -271,22 +284,25 @@ main {
 }
 
 .page-section .container {
-  background-color: var(--white);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: var(--spacing-lg);
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .page-section h1 {
-  color: var(--primary-dark);
+  color: var(--white);
   font-size: 2.5rem;
   margin-bottom: var(--spacing-md);
   text-align: center;
 }
 
 .page-section h2 {
-  color: var(--primary-dark);
+  color: var(--white);
   font-size: 2rem;
   margin-bottom: var(--spacing-md);
   text-align: center;
@@ -294,7 +310,7 @@ main {
 }
 
 .page-section p {
-  color: var(--primary-dark);
+  color: var(--white);
   margin-bottom: var(--spacing-md);
   max-width: 800px;
   text-align: center;
@@ -313,7 +329,7 @@ main {
 
 .page-section li {
   margin-bottom: var(--spacing-xs);
-  color: var(--primary-dark);
+  color: var(--white);
 }
 
 /* Contact Form */
@@ -330,7 +346,7 @@ main {
 
 .form-group label {
   display: block;
-  color: var(--primary-dark);
+  color: var(--white);
   font-weight: 600;
   margin-bottom: var(--spacing-xs);
 }
@@ -340,19 +356,28 @@ main {
 .form-group select {
   width: 100%;
   padding: var(--spacing-sm);
-  border: 2px solid var(--neutral-bg);
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
   font-family: var(--font-primary);
   font-size: 1rem;
-  color: var(--primary-dark);
-  transition: border-color 0.3s ease;
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
   outline: none;
-  border-color: var(--primary-medium);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .form-group textarea {
