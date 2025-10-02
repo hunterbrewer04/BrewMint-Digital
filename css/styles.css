@@ -30,7 +30,7 @@
 body {
   font-family: var(--font-primary);
   color: var(--primary-dark);
-  background: linear-gradient(135deg, #B8D4E8 0%, var(--primary-medium) 40%, var(--primary-dark) 100%);
+  background: linear-gradient(135deg, #B8D4E8 0%, var(--primary-medium) 30%, var(--primary-dark) 80%);
   background-attachment: fixed;
   line-height: 1.6;
   min-height: 100vh;
